@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1d0ef; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+/* Header Styles */
+.header {
+    background-color: #30103d;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+    border-radius: 50%; 
+}
+
+.main-menu ul {
+    list-style-type: none;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-menu ul li:first-child {
+    margin-left: 0;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Intro Section Styles */
+.intro {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-text {
+    flex: 1;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 1.5;
+    font-family: cursive; 
+}
+
+.intro-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.intro-images {
+    display: flex;
+}
+
+.intro-images img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 50px;
+}
+
+
+/* Categories Section Styles */
+.categories {
+    padding: 40px 0;
+    white-space: nowrap; 
+    overflow-x: auto; 
+}
+
+.category {
+    display: inline-block;
+    text-align: center;
+    width: 200px; 
+    margin-right: 70px; 
+}
+
+.category img {
+    border-radius: 50%; 
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.category h2 {
+    font-size: 20px;
+    color: #333;
+    font-family: cursive; 
+    margin-bottom: 20px;
+}
+
+.call-to-action .btn img {
+    display: block;
+    width: 500px; 
+    height: auto; 
+    margin: 0 auto 20px; 
+}
+
+
+#blog .container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#blog img {
+    max-width: 200px; 
+    height: auto; 
+}
+
+
+/* Button Styles */
+.shop-now {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #5d2852; 
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now:hover {
+    background-color: #ce00e54d; 
+}
+.service-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-image {
+    margin: 10px;
+    text-align: center;
+}
+
+.service-image img {
+    width: 200px; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+.service-image p {
+    margin-top: 5px;
+}
+
+.choose-stuffing-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #5d2852;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.choose-stuffing-btn:hover {
+    background-color: #ce00e54d;
+}
+

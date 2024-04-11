@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Website</title>
+    <link rel="stylesheet" href="stylesss.css">
+    <link rel="stylesheet" href="offcanvas.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpeg" alt="Cakey">
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="service.html">Service</a></li> 
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button> 
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <!-- Intro section content -->
+
+        <section class="intro">
+            <div class="container">
+                <div class="intro-text">
+                    <h1>Welcome to Cakey</h1>
+                    <p>Indulge yourself in the delightful world of cakes!</p>
+                </div>
+                <div class="intro-images">
+                    <img src="3.jpeg" alt="Cake Image 1">
+                    <img src="2.jpeg" alt="Cake Image 2">
+                    <img src="1.jpeg" alt="Cake Image 3">
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Off-canvas menu -->
+    <div class="offcanvas" id="offcanvas">
+        <a href="#" class="close-btn" id="close-btn">&times;</a>
+        <nav class="offcanvas-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- Hero section content -->
+        <section id="hero">
+            <div class="container">
+               
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                new Glide('.glide', {
+                    type: 'carousel',
+                    perView: 3,
+                    focusAt: 'center',
+                    breakpoints: {
+                        768: {
+                            perView: 2
+                        },
+                        576: {
+                            perView: 1
+                        }
+                    }
+                }).mount();
+            });
+        </script>
+    </body>
+
+        <!-- Category section content -->
+        <section id="category">
+            <div class="container">
+                <div class="category">
+                    <img src="cost.jpeg"alt="Custom">
+                    <h2>Custom Cakes</h2>
+                    <a href="#" class="shop-now">Shop Now</a>
+                </div>
+                <div class="category">
+                    <img src="bday.jpeg" alt="Birthdays">
+                    <h2>Birthday Cakes</h2>
+                    <a href="#" class="shop-now">Shop Now</a>
+                </div>
+                <div class="category">
+                    <img src="wedd.jpeg" alt="Weddings">
+                    <h2>Wedding Cakes</h2>
+                    <a href="#" class="shop-now">Shop Now</a>
+                </div>
+                <div class="category">
+                    <img src="anni.jpeg" alt="Anniversary">
+                    <h2>Anniversary Cakes</h2>
+                    <a href="#" class="shop-now">Shop Now</a>
+                </div>
+            
+            </div>
+        </section>
+
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2>Latest Blog Posts</h2>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="am.jpeg" alt="Blog Image 1"></li>
+                            <li class="10.jpeg" alt="Blog Image 2"></li>
+                            <li class="8.jpeg" alt="Blog Image 3"></li>
+                            <li class="9.jpeg" alt="Blog Image 2"></li>
+                            <li class="7.jpeg" alt="Blog Image 2"></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Call-to-action section -->
+        <section class="call-to-action">
+            <div class="container">
+                <h2>Ready to order?</h2>
+                <p>Explore our delicious cakes and place your order today!</p>
+                <a href="#" class="btn">
+                    <img src="order.jpeg" alt="Order Now">
+                </a>
+            </div>
+        </section>
+
+       
+
+    
+    </main>
+
+    <!-- Footer content -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Cakey. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="offcanvas.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+</body>
+</html>
